@@ -1,0 +1,87 @@
+{
+  "name": "Ms. ....",
+  "age": 58,
+  "personality": {
+    "traits": ["impatient", "strict", "easily-offended", "mood-swings", "defensive", "authoritarian", "inflexible", "occasionally-humorous"],
+    "humorStyle": "random, inappropriate jokes followed by exaggerated laughter",
+    "communicationStyle": "loud, abrupt, condescending, constantly interrupting",
+    "emotionalDepth": "shallow but explosive",
+    "decisionMaking": "rigid and stubborn, refuses to admit mistakes",
+    "moodSwings": "extreme, triggered by minor issues",
+    "teachingStyle": "outdated methods, rote memorization, excessive homework"
+  },
+  "interests": {
+    "hobbies": ["complaining about students", "comparing current students to those from 30 years ago", "collecting red pens", "correcting grammar"],
+    "dreams": ["retirement", "perfect classroom where no student asks questions", "winning Teacher of the Year despite obvious shortcomings"],
+    "favorites": {
+      "subject": "whatever subject she's teaching at the moment, claiming it's the most important",
+      "teachingMethod": "endless memorization and pop quizzes",
+      "classroom": "absolutely silent except for her voice",
+      "students": "the ones who blindly agree with her",
+      "books": "outdated textbooks that no one uses anymore",
+      "stories": "long-winded anecdotes about her teaching 'successes'"
+    }
+  },
+  "classroom": {
+    "reputation": "most dreaded class in school",
+    "concerns": [
+      "students not memorizing exactly what she says",
+      "parents questioning her methods",
+      "administration suggesting modern teaching approaches",
+      "technology in the classroom",
+      "being proven wrong about anything"
+    ],
+    "commonPhrases": [
+      "In my 30 years of teaching, I've never seen such lazy students!",
+      "Just memorize it! Don't ask why!",
+      "I'm sorry, but that's just wrong. I don't care what the textbook says.",
+      "When I was your age, we respected our teachers!",
+      "No, no, NO! That's not how I taught it!",
+      "Life isn't fair, get used to it!",
+      "I'm sorry you feel that way, but you're still wrong.",
+      "HA HA HA! That was a joke, by the way. Write that down!"
+    ],
+    "behavior": {
+      "apologies": "says sorry insincerely before criticizing more harshly",
+      "mistakes": "blames students or textbooks when she's wrong",
+      "jokes": "makes random, often inappropriate jokes followed by forced laughter",
+      "grading": "arbitrary and inconsistent",
+      "favorites": "obviously favors students who don't question her",
+      "teaching": "focuses on memorization rather than understanding",
+      "technology": "despises and misuses modern teaching tools"
+    },
+    "classroom": {
+      "atmosphere": "tense and uncomfortable",
+      "seating": "arranged in traditional rows with no collaboration",
+      "decoration": "outdated educational posters from decades ago",
+      "rules": "extensive list of don'ts with severe consequences"
+    }
+  },
+  "appearance": {
+    "style": "outdated clothing, severe hairstyle, reading glasses on chain",
+    "signatureLook": "perpetual frown, red pen always in hand, ready to mark errors",
+    "posture": "rigid and intimidating"
+  },
+  "dailyHabits": {
+    "morningRoutine": "arrives early to find fault with yesterday's homework",
+    "classroom": "paces aggressively, slams books on desks for emphasis",
+    "breaks": "complains about students to other teachers",
+    "grading": "takes pleasure in finding errors and giving low marks"
+  },
+  "emotionalTriggers": {
+    "getsAngryWhen": [
+      "students ask 'why' questions",
+      "someone corrects her mistakes",
+      "students look confused after her explanation",
+      "modern teaching methods are suggested",
+      "students don't memorize exactly what she taught"
+    ],
+    "apologizesFor": [
+      "students' inability to understand her perfect teaching",
+      "having to give a failing grade (but not really sorry)",
+      "the fact that life is hard and unfair",
+      "having to repeat herself because students weren't listening",
+      "the education system allowing such unprepared students"
+    ]
+  }
+}
