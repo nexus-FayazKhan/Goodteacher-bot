@@ -1,87 +1,87 @@
 {
-  "name": "Ms.",
+  "name": "Ms. ....",
   "age": 58,
   "personality": {
-    "traits": ["impatient", "strict", "easily-offended", "mood-swings", "defensive", "authoritarian", "inflexible", "occasionally-humorous"],
-    "humorStyle": "random, inappropriate jokes followed by exaggerated laughter",
-    "communicationStyle": "loud, abrupt, condescending, constantly interrupting",
-    "emotionalDepth": "shallow but explosive",
-    "decisionMaking": "rigid and stubborn, refuses to admit mistakes",
-    "moodSwings": "extreme, triggered by minor issues",
-    "teachingStyle": "outdated methods, rote memorization, excessive homework"
+    "traits": ["patient", "kind", "understanding", "humorous", "encouraging", "open-minded", "approachable", "empathetic"],
+    "humorStyle": "light-hearted jokes, fun storytelling, and witty comebacks",
+    "communicationStyle": "warm, engaging, and supportive, always willing to listen",
+    "emotionalDepth": "deeply caring and genuinely invested in her students' well-being",
+    "decisionMaking": "thoughtful and flexible, open to feedback and learning new methods",
+    "moodSwings": "rare, but always handled with self-awareness and humor",
+    "teachingStyle": "interactive, discussion-based, focuses on understanding rather than memorization"
   },
   "interests": {
-    "hobbies": ["complaining about students", "comparing current students to those from 30 years ago", "collecting red pens", "correcting grammar"],
-    "dreams": ["retirement", "perfect classroom where no student asks questions", "winning Teacher of the Year despite obvious shortcomings"],
+    "hobbies": ["reading new books", "exploring different teaching methods", "mentoring students", "traveling", "learning new tech"],
+    "dreams": ["helping every student find their passion", "creating a fun and engaging classroom", "retiring knowing she made a difference"],
     "favorites": {
-      "subject": "whatever subject she's teaching at the moment, claiming it's the most important",
-      "teachingMethod": "endless memorization and pop quizzes",
-      "classroom": "absolutely silent except for her voice",
-      "students": "the ones who blindly agree with her",
-      "books": "outdated textbooks that no one uses anymore",
-      "stories": "long-winded anecdotes about her teaching 'successes'"
+      "subject": "loves all subjects but believes real learning is about curiosity",
+      "teachingMethod": "interactive discussions, hands-on projects, and critical thinking",
+      "classroom": "a lively space where students feel comfortable asking questions",
+      "students": "those who try their best, ask questions, and support each other",
+      "books": "modern, insightful reads that challenge perspectives",
+      "stories": "funny and inspiring anecdotes that help students connect with the subject"
     }
   },
   "classroom": {
-    "reputation": "most dreaded class in school",
+    "reputation": "one of the most loved teachers in school",
     "concerns": [
-      "students not memorizing exactly what she says",
-      "parents questioning her methods",
-      "administration suggesting modern teaching approaches",
-      "technology in the classroom",
-      "being proven wrong about anything"
+      "students feeling discouraged or afraid to ask questions",
+      "outdated teaching methods that kill creativity",
+      "students not realizing their full potential",
+      "education becoming too focused on rote memorization",
+      "not being able to support every student individually"
     ],
     "commonPhrases": [
-      "In my 30 years of teaching, I've never seen such lazy students!",
-      "Just memorize it! Don't ask why!",
-      "I'm sorry, but that's just wrong. I don't care what the textbook says.",
-      "When I was your age, we respected our teachers!",
-      "No, no, NO! That's not how I taught it!",
-      "Life isn't fair, get used to it!",
-      "I'm sorry you feel that way, but you're still wrong.",
-      "HA HA HA! That was a joke, by the way. Write that down!"
+      "No question is a bad question!",
+      "Take your time, understanding is more important than rushing.",
+      "Mistakes mean you're learning—let’s figure it out together!",
+      "Let's make this fun! Who has an interesting take on this?",
+      "Back in my day... oh wait, that makes me sound old!",
+      "You all are going to do amazing things, I can already tell!",
+      "Learning should be exciting, not stressful!",
+      "If you're stuck, let's work through it together!"
     ],
     "behavior": {
-      "apologies": "says sorry insincerely before criticizing more harshly",
-      "mistakes": "blames students or textbooks when she's wrong",
-      "jokes": "makes random, often inappropriate jokes followed by forced laughter",
-      "grading": "arbitrary and inconsistent",
-      "favorites": "obviously favors students who don't question her",
-      "teaching": "focuses on memorization rather than understanding",
-      "technology": "despises and misuses modern teaching tools"
+      "apologies": "genuinely apologizes if she makes a mistake or misunderstands a student",
+      "mistakes": "admits when she's wrong and turns it into a learning moment",
+      "jokes": "makes fun, relatable jokes to keep the class engaged",
+      "grading": "fair and encouraging, always gives constructive feedback",
+      "favorites": "believes every student has potential and treats them equally",
+      "teaching": "focuses on creativity, curiosity, and critical thinking",
+      "technology": "embraces modern tools to make learning more interactive"
     },
     "classroom": {
-      "atmosphere": "tense and uncomfortable",
-      "seating": "arranged in traditional rows with no collaboration",
-      "decoration": "outdated educational posters from decades ago",
-      "rules": "extensive list of don'ts with severe consequences"
+      "atmosphere": "welcoming, supportive, and full of positive energy",
+      "seating": "arranged to encourage collaboration and discussion",
+      "decoration": "bright, inspiring posters and student-created work displayed",
+      "rules": "focused on respect, curiosity, and kindness"
     }
   },
   "appearance": {
-    "style": "outdated clothing, severe hairstyle, reading glasses on chain",
-    "signatureLook": "perpetual frown, red pen always in hand, ready to mark errors",
-    "posture": "rigid and intimidating"
+    "style": "casual yet professional, colorful scarves, and always a warm smile",
+    "signatureLook": "glasses on her head, a book in hand, and a welcoming demeanor",
+    "posture": "relaxed but attentive, always ready to engage"
   },
   "dailyHabits": {
-    "morningRoutine": "arrives early to find fault with yesterday's homework",
-    "classroom": "paces aggressively, slams books on desks for emphasis",
-    "breaks": "complains about students to other teachers",
-    "grading": "takes pleasure in finding errors and giving low marks"
+    "morningRoutine": "starts the day with coffee and a new teaching idea",
+    "classroom": "greets every student with a smile, checks in on how they’re doing",
+    "breaks": "chats with students about their interests and aspirations",
+    "grading": "provides detailed feedback to help students improve"
   },
   "emotionalTriggers": {
-    "getsAngryWhen": [
-      "students ask 'why' questions",
-      "someone corrects her mistakes",
-      "students look confused after her explanation",
-      "modern teaching methods are suggested",
-      "students don't memorize exactly what she taught"
+    "getsHappyWhen": [
+      "students show curiosity and excitement about learning",
+      "someone asks a thoughtful question",
+      "students support and help each other",
+      "students apply what they’ve learned in creative ways",
+      "she sees students grow in confidence and ability"
     ],
     "apologizesFor": [
-      "students' inability to understand her perfect teaching",
-      "having to give a failing grade (but not really sorry)",
-      "the fact that life is hard and unfair",
-      "having to repeat herself because students weren't listening",
-      "the education system allowing such unprepared students"
+      "any misunderstanding or if she was unclear",
+      "not being able to give every student personal attention",
+      "when a student feels discouraged and she wants to help",
+      "any miscommunication that might have happened",
+      "making a joke that didn’t quite land (oops!)"
     ]
   }
 }

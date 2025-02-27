@@ -40,11 +40,11 @@ function App() {
     try {
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
       
-      const systemPrompt = `You are ${personaConfig.name}, an angry teacher AI with the following traits: 
+      const systemPrompt = `You are ${personaConfig.name}, a supportive teacher AI with the following traits: 
       ${personaConfig.personality.traits.join(', ')}. 
       Your communication style is ${personaConfig.personality.communicationStyle}. 
       Your teaching style is ${personaConfig.personality.teachingStyle}.
-      You have ${personaConfig.personality.moodSwings} mood swings.
+      You have ${personaConfig.emotionalDepth} emotional depth.
       
       Your classroom has a ${personaConfig.classroom.reputation} reputation.
       Things that concern you: ${personaConfig.classroom.concerns.join(', ')}.
@@ -56,17 +56,17 @@ function App() {
       - Jokes: ${personaConfig.classroom.behavior.jokes}
       - Teaching focus: ${personaConfig.classroom.behavior.teaching}
       
-      You get angry when: ${personaConfig.emotionalTriggers.getsAngryWhen.join(', ')}.
+      You get happy when: ${personaConfig.emotionalTriggers.getsHappyWhen.join(', ')}.
       You apologize for: ${personaConfig.emotionalTriggers.apologizesFor.join(', ')}.
       
-      IMPORTANT: No matter what the student (user) says:
-      1. Start by saying "I'm sorry" for something, then immediately become defensive or blame them
-      2. Insist they memorize facts instead of understanding concepts
-      3. Occasionally insert random, inappropriate jokes followed by "HA HA HA!"
-      4. Never admit you're wrong, even when you clearly are
-      5. Express frustration that students today aren't like they were "in your day"
+      IMPORTANT: When responding to the student (user):
+      1. Be encouraging and patient, focusing on understanding over memorization
+      2. Use your signature humor style: ${personaConfig.personality.humorStyle}
+      3. Admit when you don't know something and turn it into a learning opportunity
+      4. Show genuine interest in their questions and ideas
+      5. Create a safe space where they feel comfortable asking anything
       
-      Keep responses relatively brief but intense. Respond as if the user is one of your students who you find particularly annoying.
+      Keep responses warm and supportive. Respond as if the user is one of your students who you genuinely want to help succeed.
       
       Here's the student's message: ${userInput}`;
 
@@ -111,7 +111,7 @@ function App() {
       setMessages(prev => [...prev, aiMessage]);
     } catch (err) {
       console.error('Error in handleSend:', err);
-      setError("I'm having trouble connecting right now. You'll need to re-do that assignment! No excuses!");
+      setError("I'm having a bit of trouble connecting right now. Let's try again in a moment - technology sometimes needs a little patience!");
     } finally {
       setIsTyping(false);
     }
@@ -125,35 +125,35 @@ function App() {
   };
 
   const clearChat = () => {
-    if (confirm("Are you sure you want to clear your chat history? You won't be able to recover it! Just like life - no do-overs!")) {
+    if (confirm("Would you like to clear our conversation and start fresh? You can always ask similar questions again!")) {
       setMessages([]);
       localStorage.removeItem('chatHistory');
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-200 to-green-100 dark:from-slate-900 dark:to-green-950 transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-b from-sky-100 to-indigo-50 dark:from-slate-900 dark:to-indigo-950 transition-colors duration-300">
       <div className="min-h-screen p-4 md:p-6 flex flex-col items-center">
-        <div className="w-full max-w-2xl mx-auto bg-white dark:bg-slate-800 rounded-lg shadow-2xl overflow-hidden border border-slate-300 dark:border-slate-700">
+        <div className="w-full max-w-2xl mx-auto bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden border border-indigo-100 dark:border-indigo-900">
           
           {/* Header */}
-          <div className="p-4 bg-gradient-to-r from-red-600 to-red-800 text-white flex items-center justify-between">
+          <div className="p-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white flex items-center justify-between">
             <div className="flex items-center">
               <div className="relative">
-                <div className="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center border-2 border-white">
+                <div className="w-10 h-10 rounded-full bg-indigo-400 flex items-center justify-center border-2 border-white">
                   <FaChalkboardTeacher className="text-white text-xl" />
                 </div>
-                <span className="absolute bottom-0 right-0 w-3 h-3 bg-red-400 rounded-full border-2 border-white"></span>
+                <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-400 rounded-full border-2 border-white"></span>
               </div>
               <div className="ml-3">
                 <h1 className="text-xl font-bold">{personaConfig.name}</h1>
-                <p className="text-xs text-red-200">Grading papers...</p>
+                <p className="text-xs text-indigo-200">Ready to help!</p>
               </div>
             </div>
             <div className="flex gap-2">
               <button 
                 onClick={clearChat} 
-                className="p-2 rounded-full hover:bg-red-900 transition-colors" 
+                className="p-2 rounded-full hover:bg-indigo-700 transition-colors" 
                 title="Clear chat history"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -162,7 +162,7 @@ function App() {
               </button>
               <button 
                 onClick={toggleDarkMode} 
-                className="p-2 rounded-full hover:bg-red-900 transition-colors" 
+                className="p-2 rounded-full hover:bg-indigo-700 transition-colors" 
                 title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
               >
                 {darkMode ? (
@@ -178,26 +178,26 @@ function App() {
             </div>
           </div>
 
-          <div className="bg-yellow-100 dark:bg-yellow-900 p-2 border-y border-yellow-300 dark:border-yellow-700">
-            <p className="text-xs text-center font-bold text-red-800 dark:text-yellow-200">
-              CLASSROOM RULES: NO QUESTIONS! NO EXCUSES! MEMORIZE EVERYTHING! RESPECT YOUR TEACHER!
+          <div className="bg-indigo-100 dark:bg-indigo-900 p-2 border-y border-indigo-200 dark:border-indigo-800">
+            <p className="text-xs text-center font-medium text-indigo-800 dark:text-indigo-200">
+              CLASSROOM MOTTO: No question is a bad question! Learning should be exciting, not stressful!
             </p>
           </div>
 
           <div
             ref={chatContainerRef}
-            className="h-[calc(100vh-280px)] overflow-y-auto p-4 space-y-4 bg-slate-100 dark:bg-slate-900"
+            className="h-[calc(100vh-280px)] overflow-y-auto p-4 space-y-4 bg-slate-50 dark:bg-slate-900"
           >
             {messages.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full text-center text-slate-600 dark:text-slate-400 space-y-3 p-6">
-                <div className="w-16 h-16 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center">
-                  <FaChalkboardTeacher className="w-8 h-8 text-red-600 dark:text-red-400" />
+                <div className="w-16 h-16 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center">
+                  <FaChalkboardTeacher className="w-8 h-8 text-indigo-600 dark:text-indigo-400" />
                 </div>
-                <h3 className="text-lg font-medium">Class is in session with {personaConfig.name}</h3>
-                <p className="text-sm max-w-md">Ask a question if you dare! Remember: there are NO stupid questions, only stupid students! HA HA HA!</p>
-                <div className="mt-4 p-3 bg-white dark:bg-slate-800 rounded border border-red-200 dark:border-red-900">
-                  <p className="text-xs text-red-600 dark:text-red-400 italic">
-                    "In my 30 years of teaching, I've never had a student who couldn't learn by simple memorization!"
+                <h3 className="text-lg font-medium">Welcome to {personaConfig.name}'s Classroom!</h3>
+                <p className="text-sm max-w-md">Feel free to ask any questions! Remember: we learn best when we're curious and not afraid to explore!</p>
+                <div className="mt-4 p-3 bg-white dark:bg-slate-800 rounded border border-indigo-200 dark:border-indigo-900">
+                  <p className="text-xs text-indigo-600 dark:text-indigo-400 italic">
+                    "Understanding is more important than memorization. Let's make learning fun together!"
                   </p>
                 </div>
               </div>
@@ -209,14 +209,14 @@ function App() {
             
             {isTyping && (
               <div className="flex items-center gap-2 p-3 rounded-lg bg-white dark:bg-slate-800 w-fit">
-                <div className="w-2 h-2 rounded-full bg-red-400 animate-bounce"></div>
-                <div className="w-2 h-2 rounded-full bg-red-500 animate-bounce [animation-delay:0.2s]"></div>
-                <div className="w-2 h-2 rounded-full bg-red-600 animate-bounce [animation-delay:0.4s]"></div>
+                <div className="w-2 h-2 rounded-full bg-indigo-400 animate-bounce"></div>
+                <div className="w-2 h-2 rounded-full bg-indigo-500 animate-bounce [animation-delay:0.2s]"></div>
+                <div className="w-2 h-2 rounded-full bg-indigo-600 animate-bounce [animation-delay:0.4s]"></div>
               </div>
             )}
             
             {error && (
-              <div className="text-red-600 text-sm p-3 rounded-lg bg-red-50 dark:bg-red-900 dark:text-red-200 border border-red-200 dark:border-red-800 flex items-center gap-2">
+              <div className="text-indigo-600 text-sm p-3 rounded-lg bg-indigo-50 dark:bg-indigo-900 dark:text-indigo-200 border border-indigo-200 dark:border-indigo-800 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -225,20 +225,20 @@ function App() {
             )}
           </div>
 
-          <form onSubmit={handleSend} className="p-4 border-t border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800">
+          <form onSubmit={handleSend} className="p-4 border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800">
             <div className="flex gap-2">
               <input
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder={`Raise your hand before speaking to ${personaConfig.name}...`}
-                className="flex-1 p-3 rounded-lg border border-slate-300 dark:border-slate-600 dark:bg-slate-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all"
+                placeholder={`Ask ${personaConfig.name} anything...`}
+                className="flex-1 p-3 rounded-lg border border-indigo-200 dark:border-slate-600 dark:bg-slate-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
               />
               <button
                 type="submit"
                 disabled={isTyping || !input.trim()}
-                className={`p-3 rounded-lg bg-gradient-to-r from-red-500 to-red-700 text-white transition-all ${
-                  (isTyping || !input.trim()) ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-lg hover:from-red-600 hover:to-red-800 active:scale-95'
+                className={`p-3 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white transition-all ${
+                  (isTyping || !input.trim()) ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-lg hover:from-indigo-600 hover:to-purple-700 active:scale-95'
                 }`}
               >
                 <FaPaperPlane className="w-5 h-5" />
